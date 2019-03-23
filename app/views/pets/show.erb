@@ -1,1 +1,3 @@
-show.erb
+<h1>Show page Pet</h1>
+<h2><%= @pet.name %></h2>
+<p><a href="/owners/<%= @pet.owner_id %>"><%= @pet.owner.name %></a></p>
