@@ -1,7 +1,7 @@
 <h1>Welcome to Pet page!</h1>
 <% @pets.each do |pet| %>
   <ul>
-    <li><%= pet.name %></li>
+    <li><a href="/pets/<%= pet.id %>"><%= pet.name %></a></li>
   </ul>
 <% end  %>
 
